@@ -9,7 +9,7 @@ export const cities = [
     },
     {
         id:3,
-        name:'اضفهان'
+        name:'اصفهان'
     },
     {
         id:4,

@@ -6,8 +6,14 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import { Link } from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
+import SearchBar from "material-ui-search-bar";
 import Chip from '@material-ui/core/Chip';
-const Dashboard = () => (
+import { cities } from '../data/cities';
+
+const Dashboard = ({data}) => {
+  const [value, setValue] = React.useState('')
+  return(
+
     <div className="welcome">
        <div className="textStyle">
            <br></br>
@@ -43,22 +49,43 @@ const Dashboard = () => (
 
        </div>
        
-       <div className="combo-box">
+    {/** <div className="combo-box">
         <Autocomplete className="size-w"
       options={city}
       getOptionLabel={(option) => option.title}
       renderInput={(params) => <TextField {...params} label=" شهرتان" variant="outlined" />}
 
     />
-        </div>
+        </div> */}  
+
+        <div className="combo-box"><SearchBar
+                placeholder="جستجوی شهر"
+                value={value} 
+                onChangeText={e => setValue(e.target.value)}
+                    />
+                    
+                    <h2 class="all-city">همه شهر ها</h2>
+                    </div>
+                  
+                <div class="position-city">
+                {cities
+                  .filter(item => {
+                    if (!value) return true
+                    if (item.title.includes(value) || item.text.includes(value)) {
+                      return true
+                    }
+                  })
+                .map(cityname => (
+                   <span className="border-city"> <a herf={cityname.id}>
+                      {cityname.name}
+                    </a>
+                    </span>
+                  ))}
+                </div>
     <div>
 
     </div>
     </div>
 );
-const city = [
-    { title: 'کرج' },
-    { title: 'تهران' },
-    { title: 'شیراز' },
-];
+};
 export default Dashboard;

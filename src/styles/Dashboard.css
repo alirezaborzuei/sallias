@@ -42,3 +42,25 @@
 .size-w{
     width: 120%;
 }
+.position-city{
+    position: relative;
+    top:90px;
+    left:-110px;
+    font-size: small;
+    text-align: center;
+    
+
+}
+.border-city{
+    
+    padding:10px;
+    background-color: lightblue;
+    border-radius: 5px;
+    margin:10px;
+}
+.all-city{
+    position: relative;
+    left: 54%;
+    font-size: large;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+.textStyle{
+    position: absolute;
+    top:20%;
+    left: 60%;
+    width: 40%;
+    font-size: small;
+    height: 100%;
+    text-align: center;
+    background: #e2e2e2;
+    border: hidden;
+}
+.hr{
+    width: 60%;
+    border:solid 0.3px black;
+}
+.logo{
+    width: 40px;
+    height:40px;
+    margin:5px;
+}
+.bold{
+    font-weight: bold;
+}
+.iconsize{
+    width: 20px;
+    height:20px;
+    margin:5px;
+    background-color: lightblue;
+   
+}
+.combo-box{
+    position: absolute;
+    top:20%;
+    left: 10%;
+    width: 40%;
+    font-size: small;
+    text-align: center;
+    border: hidden;
+    direction:rtl;
+
+}
+.size-w{
+    width: 120%;
+}

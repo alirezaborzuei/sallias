@@ -1,0 +1,39 @@
+.navbar-logo{
+    float: right;
+    height: 30px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: whitesmoke;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.topnav  a{
+    float: right;
+    display: block;
+    color: #0f0f0f;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar-item {
+    color: black !important;
+    background-color: whitesmoke;
+    margin: 10px 5px 0 5px;
+    padding: 5px 5px;
+    transition: 500ms;
+}
+
+.navbar-item:hover{
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.navbar-active-item {
+    color: blue !important;
+    font-weight: bold;
+    margin: 5px;
+}
+
+

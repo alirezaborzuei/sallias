@@ -58,8 +58,7 @@ const Dashboard = () => {
                                 <SearchIcon/>
                             </InputAdornment>
                         ),
-                    }}
-                />
+                    }}/>
                 <IconButton className="iconButton">
                     <SearchIcon/>
                 </IconButton>

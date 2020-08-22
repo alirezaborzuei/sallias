@@ -57,7 +57,7 @@
 .iconButton {
     padding: 10px;
 }
-.border-city:hover {
+.navbar-item:hover {
    color: whitesmoke;
     text-decoration:none;
     background-color: lightblue;

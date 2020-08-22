@@ -7,32 +7,6 @@
     font-family: IRANSans !important;
 }
 
-.navbar-logo{
-    float: right;
-    height: 50px;
-}
-
-.navbar-item {
-    color: black !important;
-    background-color: #dcdcdc;
-    margin: 10px 5px 0 5px;
-    padding: 5px 5px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    transition: 500ms;
-}
-
-.navbar-item:hover{
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.navbar-active-item {
-    color: blue !important;
-    font-weight: bold;
-    margin: 5px;
-}
-
 .right-dir {
     direction: rtl !important;
 }
@@ -54,8 +28,4 @@
 body{
 	direction: rtl;
 	font-family:'IRANSans';
-}
-
-.my-navbar{
-    margin: 15px;
 }

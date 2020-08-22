@@ -3,64 +3,81 @@
     top:20%;
     left: 60%;
     width: 40%;
-    font-size: small;
+    font-size: large;
     height: 100%;
     text-align: center;
-    background: #e2e2e2;
+    background: whitesmoke;
     border: hidden;
 }
 .hr{
-    width: 60%;
-    border:solid 0.3px black;
+    width: 70%;
+    border:solid 0.3px lightblue;
 }
 .logo{
-    width: 40px;
-    height:40px;
+    width: 20%;
+    height:20%;
     margin:5px;
 }
 .bold{
     font-weight: bold;
 }
 .iconsize{
-    width: 20px;
-    height:20px;
-    margin:5px;
-    background-color: lightblue;
-   
-}
-.combo-box{
-    position: absolute;
-    top:20%;
-    left: 10%;
-    width: 40%;
-    font-size: small;
-    text-align: center;
-    border: hidden;
-    direction:rtl;
-
+    margin:10px;
+    background-color: whitesmoke;
 }
 .size-w{
     width: 120%;
 }
 .position-city{
-    position: relative;
-    top:90px;
-    left:-110px;
-    font-size: small;
+    padding-right:40%;
+    margin: 10px;
+    font-size: large;
     text-align: center;
-    
-
-}
-.border-city{
-    
-    padding:10px;
-    background-color: lightblue;
-    border-radius: 5px;
-    margin:10px;
 }
 .all-city{
     position: relative;
     left: 54%;
     font-size: large;
     text-align: center;
+}
+.position-input{
+    position: relative;
+    right: 45%;
+}
+.icon-root{
+    padding: 10px 40px;
+    display: flex;
+    alignItems: 'center';
+    width: 60%;
+}
+.search-input{
+   /* marginLeft: theme.spacing(1);*/
+    flex: 1;
+}
+.iconButton {
+    padding: 10px;
+}
+.border-city:hover {
+   color: whitesmoke;
+    text-decoration:none;
+    background-color: lightblue;
+}
+.border-city{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:15px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width:100%;
+    color: #0f0f0f;
+}
+.type-list{
+    list-style: none;
+    color:black;
+
+}
+.pos-h2{
+  text-align: right;
+    padding-right: 42%;
 }

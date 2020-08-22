@@ -1,5 +1,4 @@
 /*Base CSS*/
-
 .bold {
     font-weight: bold;
 }
@@ -11,7 +10,6 @@
 .navbar-logo{
     float: right;
     height: 50px;
-    margin: -5px 20px 5px 5px;
 }
 
 .navbar-item {

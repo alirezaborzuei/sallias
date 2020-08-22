@@ -19,4 +19,8 @@ export const cities = [
         id:5,
         name:'شیراز'
     },
+	  {
+        id:6,
+        name:'کرمانشاه'
+    },
 ];

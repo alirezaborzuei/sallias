@@ -1,13 +1,11 @@
 .textStyle{
     position: absolute;
-    top:20%;
     left: 60%;
     width: 40%;
     font-size: large;
     height: 100%;
     text-align: center;
     background: whitesmoke;
-    border: hidden;
 }
 .hr{
     width: 70%;
@@ -34,15 +32,10 @@
     font-size: large;
     text-align: center;
 }
-.all-city{
-    position: relative;
-    left: 54%;
-    font-size: large;
-    text-align: center;
-}
 .position-input{
     position: relative;
     right: 45%;
+    top:30px;
 }
 .icon-root{
     padding: 10px 40px;
@@ -51,13 +44,12 @@
     width: 60%;
 }
 .search-input{
-   /* marginLeft: theme.spacing(1);*/
     flex: 1;
 }
 .iconButton {
     padding: 10px;
 }
-.navbar-item:hover {
+.border-city:hover {
    color: whitesmoke;
     text-decoration:none;
     background-color: lightblue;

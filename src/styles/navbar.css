@@ -1,13 +1,17 @@
 .navbar-logo{
     float: right;
     height: 30px;
+    padding-left: 30px;
 }
 .topnav {
     overflow: hidden;
     background-color: whitesmoke;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+
 }
 .topnav  a{
     float: right;
@@ -15,7 +19,8 @@
     color: #0f0f0f;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
+
 }
 
 .navbar-item {
@@ -25,15 +30,27 @@
     padding: 5px 5px;
     transition: 500ms;
 }
-
 .navbar-item:hover{
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
+    text-decoration: none;
+    background-color: lightblue;
+    color: white;
+    margin-bottom: 0 !important;
 }
-.navbar-active-item {
-    color: blue !important;
-    font-weight: bold;
-    margin: 5px;
+navbar-item:after{
+    text-decoration: none;
+}
+.active {
+    color: white;
+  }
+.icon-search:hover{
+    background-color: lightblue;
 }
 
+.hr-nav{
+    width: 100%;
+    border:solid 0.2px lightblue;
+    height: 0px;
 
+}

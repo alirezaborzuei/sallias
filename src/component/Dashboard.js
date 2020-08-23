@@ -21,7 +21,8 @@ const Dashboard = () => {
     return (
         <div className="welcome">
             <div className="textStyle">
-                <br/>
+
+                <br/><br/><br/><br/><br/>
                 <span> سالیاس! پایگاه خرید و فروش بی‌واسطه‌</span>
                 <br/>
                 <span>   اگه دنبال چیزی هستی، شهرت رو انتخاب کن و تو دسته‌بندی‌ها به دنبالش بگرد.</span>
@@ -71,7 +72,7 @@ const Dashboard = () => {
                 )}
                 {itemsToDisplay.map(item => (
                     <div className="col-lg-4 col-xs-6 col-sm-6">
-                        <Link className="position-city border-city " key={item.id}>
+                        <Link to={`city/${item.id}`}  className="position-city border-city " key={item.id}>
                             {item.name}
                         </Link>
                     </div>

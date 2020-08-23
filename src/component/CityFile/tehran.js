@@ -38,7 +38,7 @@ class  Tehran extends Component {
                     pageStart={0}
                     loadMore={this.handleLoadMore.bind(this)}
                     hasMore={this.state.hasMore}
-                    loader={<div className="loader">Loading ...</div>}
+                    loader={<div className="loader"> درحال بارگذاری...</div>}
                 >
                     {this.state.articles.map((product , index) => <Product product={product} key={index}/>)}
                 </InfiniteScroll>

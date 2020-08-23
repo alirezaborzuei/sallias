@@ -5,8 +5,7 @@ class NoMatch extends Component {
         return (
             <div>
                 <br /><br /><br /><br />
-                <h2 >
-                     404  صحفه مورد نظر پیدا نشد.  </h2>
+                <h2 >404  صحفه مورد نظر پیدا نشد.  </h2>
 
             </div>
         );

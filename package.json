@@ -21,10 +21,13 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
+    "react-dropdown": "^1.8.0",
     "react-filter-search": "^1.0.11",
     "react-infinite-scroller": "^1.2.4",
+    "react-multi-select-component": "^3.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-widgets": "^4.5.0",
     "save": "^2.4.0"
   },
   "scripts": {

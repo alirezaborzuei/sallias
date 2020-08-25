@@ -10,14 +10,12 @@ import NoMatch from "./component/NoMatch";
 import Product from './component/Pages/product';
 import Tehran from './component/CityFile/Tehran'
 import Catergory from "./component/category";
-
 function App() {
   return (
     <BrowserRouter>
                 <Navbars/>
-                <div className="container">
+                <div className="container font-iran-sans">
                 <Switch>
-
                     <Route path="/ca" exact={true} component={Catergory}/>
                     <Route path="/" exact={true} component={Dashboard}/>
                     <Route path="/1" exact={true} component={Tehran}/>

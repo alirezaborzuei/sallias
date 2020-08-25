@@ -6,29 +6,10 @@ ul li {list-style-type: none;
     color: lightblue !important;
 }
 ul li a {
-    
     text-decoration: none !important;
 }
-.margin-right{
-   margin-right: 85% ;
-}
-.mt{
-    margin-top: -14%;
-    margin-right:92%;
-}
-.bg-color-card{
-    background-color: whitesmoke;
-    border: none;
-    color: #0f0f0f;
-}
-.size-select-w{
-    width: 100%;
-    padding: 15px 15px;
-}
-.zindex{
-    tab-index: 10!important;
-    z-index:10!important;
-    overflow: inherit;
-margin-bottom: 0;
-    flex-wrap: wrap;
+
+.MuiTypography-body1{
+    padding-left: 100%;
+    font-size: 18px !important;
 }

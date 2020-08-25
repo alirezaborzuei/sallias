@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import OptionSelect from './inputcity';
 import {Tehrancites} from '../data/Tehrancitys';
@@ -19,172 +19,167 @@ import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import LocalPrintshopIcon from '@material-ui/icons/LocalPrintshop';
-import {makeStyles} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import DropdownButton from "react-bootstrap/DropdownButton";
-import MultiSelect from "react-multi-select-component";
-import {Price} from './../data/price';
-import {
-    Dropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    Navbar,
-    Nav,
-    Accordion,
-    Card,
-    Button
-} from 'react-bootstrap';
-import MyNav from "./MyNav";
-import Select from "@material-ui/core/Select";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import AliSelect from "./inputcity";
+import "../styles/collapse.scss";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import ExpandLess from "@material-ui/icons/ExpandLess";
+import ExpandMore from "@material-ui/icons/ExpandMore";
+import Collapse from '@material-ui/core/Collapse';
+import RangeSlider from "./raneprice";
 
-const useStyles = makeStyles(() => ({
-    menubtn: {
-        textDecoration: 'none',
-    },
-}));
+class Catergory extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            pricestate: false,
+            location: false,
 
+        }
+    }
 
-const Catergory = () => {
-    const [age, setAge] = React.useState('');
-    const Tehcity = (event) => {
-        setAge(event.target.value);
+    handleprice() {
+        this.setState(prevState => ({
+            pricestate: !prevState.pricestate,
+        }))
     };
-   // const [filterText, setFilterText] = useState("");
 
-    //const itemsToDisplay = filterText ? filteredItems : cities;
-    return (
+    handleClick() {
+        this.setState(prevState => ({
+            location: !prevState.location,
+        }))
+    };
 
-        <div className="welcome textStyle">
-            <br/><br/><br/>
 
-            <div className="text-right text-link">
-                <ul>
-                    <li><span>دسته بندی ها</span></li>
-                    <li>
-                        <Link to=" "> <ApartmentIcon className="iconsize " style={{fontSize: 30}}/>
-                            <tittle className="text-dark "> املاک</tittle>
-                        </Link></li>
+    render() {
+        return (
+            <div className="welcome textStyle">
+                <br/><br/><br/>
 
-                    <li>
-                        <Link to=" "> <DirectionsCarIcon className="iconsize " style={{fontSize: 30}}/>
-                            <tittle className="text-dark"> وسایل نقلیه</tittle>
-                        </Link></li>
-
-                    <li>
-                        <Link to=" "> <PhoneIphoneIcon className="iconsize " style={{fontSize: 30}}/>
-                            <tittle className="text-dark"> لوازم الکترونیکی</tittle>
-                        </Link></li>
-
-                    <li>
-                        <Link to=" "> <WeekendIcon className="iconsize " style={{fontSize: 30}}/>
-                            <tittle className="text-dark"> مربوط به خانه</tittle>
-                        </Link></li>
-
-                    <li>
-                        <Link to=" "> <FormatColorFillIcon className="iconsize " style={{fontSize: 30}}/>
-                            <tittle className="text-dark"> خدمات</tittle>
-                        </Link></li>
-
-                    <li>
-                        <Link to=" "> <DirectionsBikeIcon className="iconsize " style={{fontSize: 30}}/>
-                            <tittle className="text-dark"> وسایل شخصی</tittle>
-                        </Link></li>
-
-                    <li>
-                        <Link to=" "> <CasinoIcon className="iconsize " style={{fontSize: 30}}/>
-                            <tittle className="text-dark"> سرگرمی و فراغت</tittle>
+                <div className="text-right text-link">
+                    <ul>
+                        <li><span>دسته بندی ها</span></li>
+                        <li>
+                            <Link to=" "> <ApartmentIcon className="iconsize " style={{fontSize: 30}}/>
+                                <tittle className="text-dark "> املاک</tittle>
+                            </Link></li>
+                        <li>
+                            <Link to=" "> <DirectionsCarIcon className="iconsize " style={{fontSize: 30}}/>
+                                <tittle className="text-dark"> وسایل نقلیه</tittle>
+                            </Link></li>
+                        <li>
+                            <Link to=" "> <PhoneIphoneIcon className="iconsize " style={{fontSize: 30}}/>
+                                <tittle className="text-dark"> لوازم الکترونیکی</tittle>
+                            </Link></li>
+                        <li>
+                            <Link to=" "> <WeekendIcon className="iconsize " style={{fontSize: 30}}/>
+                                <tittle className="text-dark"> مربوط به خانه</tittle>
+                            </Link></li>
+                        <li>
+                            <Link to=" "> <FormatColorFillIcon className="iconsize " style={{fontSize: 30}}/>
+                                <tittle className="text-dark"> خدمات</tittle>
+                            </Link></li>
+                        <li>
+                            <Link to=" "> <DirectionsBikeIcon className="iconsize " style={{fontSize: 30}}/>
+                                <tittle className="text-dark"> وسایل شخصی</tittle>
+                            </Link></li>
+                        <li>
+                            <Link to=" "> <CasinoIcon className="iconsize " style={{fontSize: 30}}/>
+                                <tittle className="text-dark"> سرگرمی و فراغت</tittle>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to=" "> <GroupAddIcon className="iconsize " style={{fontSize: 30}}/>
+                                <tittle className="text-dark"> اجتماعی</tittle>
+                            </Link></li>
+                        <Link to=" "> <BusinessCenterIcon className="iconsize " style={{fontSize: 30}}/>
+                            <tittle className="text-dark"> برای کسب و کار</tittle>
                         </Link>
-                    </li>
+                        <li>
+                            <Link to=" "> <PersonAddIcon className="iconsize " style={{fontSize: 30}}/>
+                                <tittle className="text-dark"> استخدام و کاریابی</tittle>
+                            </Link></li>
+                        <li>
+                            <Link to=" "> <LocalPrintshopIcon className="iconsize" style={{fontSize: 30}}/>
+                                <tittle className="text-dark"> انجام پروژه</tittle>
+                            </Link>
+                        </li>
+                        <hr className="hr"/>
+                        <li>
+                            <List
+                                component="nav"
+                                aria-labelledby="nested-list-subheader"
+                            >
 
-                    <li>
-                        <Link to=" "> <GroupAddIcon className="iconsize " style={{fontSize: 30}}/>
-                            <tittle className="text-dark"> اجتماعی</tittle>
-                        </Link></li>
-
-                    <Link to=" "> <BusinessCenterIcon className="iconsize " style={{fontSize: 30}}/>
-                        <tittle className="text-dark"> برای کسب و کار</tittle>
-                    </Link>
-
-                    <li>
-                        <Link to=" "> <PersonAddIcon className="iconsize " style={{fontSize: 30}}/>
-                            <tittle className="text-dark"> استخدام و کاریابی</tittle>
-                        </Link></li>
-
-                    <li>
-                        <Link to=" "> <LocalPrintshopIcon className="iconsize" style={{fontSize: 30}}/>
-                            <tittle className="text-dark"> انجام پروژه</tittle>
-                        </Link>
-                    </li>
-                    <hr className="hr"/>
-                    <li>
-                        <Link className="border-0">
-                            <Accordion defaultActiveKey="2">
-                                <Card className="bg-color-card ">
-                                    <Accordion.Toggle as={Card.Header} eventKey="0" className="bg-color-card">
-                                        محل
-                                    </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="0">
-                                        <Card.Body className="zindex">
-                                    <OptionSelect  data={Tehrancites}  className="zindex"/>
-
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card className="bg-color-card ">
-                                    <Accordion.Toggle as={Card.Header} eventKey="1" className="bg-color-card">
-                                       قیمت
-                                    </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="1">
-                                        <Card.Body >
-                                            <p>حداقل</p>
-                                            <OptionSelect  data={Price} minLength={1}/>
-                                            <p>حداکثر</p>
-                                            <OptionSelect  data={Price} minLength={1} />
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-
-                            </Accordion>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link>
-                            <tittle className="text-dark "> فقط عکس دار</tittle>
-
-                        </Link>
-                    </li>
+                                <ListItem button onClick={this.handleClick.bind(this)}>
+                                    <ListItemText primary="محل"/>
+                                    {this.state.location ? <ExpandLess/> : <ExpandMore/>}
+                                </ListItem>
+                                <Collapse in={this.state.location} timeout="auto" unmountOnExit>
+                                    <List component="div">
+                                        <ListItem button>
+                                            <OptionSelect data={Tehrancites} minlenght={1}/>
+                                        </ListItem>
+                                    </List>
+                                </Collapse>
+                            </List>
+                            <List
+                                component="nav"
+                                aria-labelledby="nested-list-subheader"
+                                className=" "
+                            >
+                                <ListItem button onClick={this.handleprice.bind(this)}>
+                                    <ListItemText primary="قیمت"/>
+                                    {this.state.pricestate ? <ExpandLess/> : <ExpandMore/>}
+                                </ListItem>
+                                <Collapse in={this.state.pricestate} timeout="auto" unmountOnExit>
+                                    <List component="div">
+                                        <ListItem button className=" ">
+                                            <RangeSlider />
+                                        </ListItem>
+                                    </List>
+                                </Collapse>
+                            </List>
 
 
-                </ul>
+                        </li>
+                        <li>
+                            <Link>
+                                <tittle className="text-dark "> فقط عکس دار</tittle>
 
+                            </Link>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                <hr className="hr"/>
+
+                <div>
+                    <Link to=" "><img alt="3" src="/assert/3.png" className="logo"/></Link>
+                    <Link to=" "><img alt="2" src="/assert/2.png" className="logo"/></Link>
+                    <Link to=" "><img alt="1" src="/assert/1.png" className="logo"/></Link>
+                </div>
+                <hr className="hr"/>
+                <div>
+                    <span className="bold">  سالیاس </span>
+                    <span>را در شبکه های اجتماعی دنبال نمائید:</span>
+                </div>
+                <div>
+                    <Link to="/te"><TelegramIcon className="iconsize " style={{fontSize: 40}}/></Link>
+                    <Link to="/tw"><TwitterIcon className="iconsize " style={{fontSize: 40}}/></Link>
+                    <Link to="/i"><InstagramIcon className="iconsize " style={{fontSize: 40}}/></Link>
+                </div>
             </div>
+        );
+    }
 
+    toggle = index => {
+        let collapse = "isOpen" + index;
 
-            <hr className="hr"/>
-
-            <div>
-                <Link to=" "><img alt="3" src="/assert/3.png" className="logo"/></Link>
-                <Link to=" "><img alt="2" src="/assert/2.png" className="logo"/></Link>
-                <Link to=" "><img alt="1" src="/assert/1.png" className="logo"/></Link>
-            </div>
-            <hr className="hr"/>
-            <div>
-                <span className="bold">  سالیاس </span>
-                <span>را در شبکه های اجتماعی دنبال نمائید:</span>
-            </div>
-            <div>
-                <Link to="/te"><TelegramIcon className="iconsize " style={{fontSize: 40}}/></Link>
-                <Link to="/tw"><TwitterIcon className="iconsize " style={{fontSize: 40}}/></Link>
-                <Link to="/i"><InstagramIcon className="iconsize " style={{fontSize: 40}}/></Link>
-            </div>
-        </div>
-
-
-    );
+        this.setState(prevState => ({[collapse]: !prevState[collapse]}));
+    };
 }
+
 export default Catergory;

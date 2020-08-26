@@ -19,7 +19,7 @@ export default function RangeSlider() {
     };
     return (
         <div className={classes.root}>
-            <pre> محدوده قیمت(بر حسب میلیون)</pre>
+            <p className="text-right"> محدوده قیمت(بر حسب میلیون)</p>
             <Typography id="range-slider" gutterBottom>
 
             </Typography>

@@ -14,11 +14,11 @@ function App() {
   return (
     <BrowserRouter>
                 <Navbars/>
-                <div className="container font-iran-sans">
+                <div className=" ">
                 <Switch>
                     <Route path="/ca" exact={true} component={Catergory}/>
                     <Route path="/" exact={true} component={Dashboard}/>
-                    <Route path="/1" exact={true} component={Tehran}/>
+                    <Route path="/city/1" exact={true} component={Tehran}/>
                     <Route path="/about" exact={true} component={About}/>
                     <Route path="/contact" exact={true} component={Contact}/>
                     <Route path="/product/:id" component={Product}/>

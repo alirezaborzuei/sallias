@@ -22,13 +22,15 @@ const Dashboard = () => {
         <div className="welcome">
             <div className="textStyle">
 
-                <br/><br/><br/><br/><br/>
+<p>
                 <span> سالیاس! پایگاه خرید و فروش بی‌واسطه‌</span>
                 <br/>
                 <span>   اگه دنبال چیزی هستی، شهرت رو انتخاب کن و تو دسته‌بندی‌ها به دنبالش بگرد.</span>
 
                 <br/>
                 <span> اگر هم می‌خوای چیزی بفروشی، چند تا عکس خوب ازش بگیر و آگهیت رو بچسبون به سالیاس .</span>
+
+</p>
                 <hr className="hr"/>
                 <div>
                     <Link to=" "><img alt="3" src="/assert/3.png" className="logo"/></Link>
@@ -41,9 +43,9 @@ const Dashboard = () => {
                     <span>را در شبکه های اجتماعی دنبال نمائید:</span>
                 </div>
                 <div className="">
-                    <Link to="/te"><TelegramIcon className="iconsize " style={{ fontSize: 40 }}/></Link>
-                    <Link to="/tw"><TwitterIcon className="iconsize " style={{ fontSize: 40 }}/></Link>
-                    <Link to="/i"><InstagramIcon className="iconsize " style={{ fontSize: 40 }}/></Link>
+                    <Link to="/te"><TelegramIcon className="iconsize " style={{ fontSize: 20 }}/></Link>
+                    <Link to="/tw"><TwitterIcon className="iconsize " style={{ fontSize: 20 }}/></Link>
+                    <Link to="/i"><InstagramIcon className="iconsize " style={{ fontSize: 20 }}/></Link>
                 </div>
             </div>
 

@@ -27,36 +27,47 @@ import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import Collapse from '@material-ui/core/Collapse';
 import RangeSlider from "./raneprice";
-
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Switch from '@material-ui/core/Switch';
 class Catergory extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             pricestate: false,
             location: false,
-
+            checkedA: false,
+            checkedB:false,
         }
     }
 
+    togglechane(event) {
+        this.setState(prevState => ({
+            checkedA: !prevState.checkedA,
+
+        }))
+    };
+    togglechaneB(event) {
+        this.setState(prevState => ({
+            checkedB: !prevState.checkedB,
+        }))
+    };
     handleprice() {
         this.setState(prevState => ({
-            pricestate: !prevState.pricestate,
+            pricestate: !prevState.pricestate
         }))
     };
 
     handleClick() {
         this.setState(prevState => ({
-            location: !prevState.location,
+            location: !prevState.location
         }))
     };
 
 
     render() {
         return (
-            <div className="welcome textStyle">
-                <br/><br/><br/>
-
-                <div className="text-right text-link">
+            <div className="mr-4 text-nowrap menu-style text-right">
+                <div className="">
                     <ul>
                         <li><span>دسته بندی ها</span></li>
                         <li>
@@ -104,7 +115,6 @@ class Catergory extends React.Component {
                                 <tittle className="text-dark"> انجام پروژه</tittle>
                             </Link>
                         </li>
-                        <hr className="hr"/>
                         <li>
                             <List
                                 component="nav"
@@ -145,23 +155,41 @@ class Catergory extends React.Component {
                         </li>
                         <li>
                             <Link>
-                                <tittle className="text-dark "> فقط عکس دار</tittle>
-
+                                <div>
+                                <span  className="text-dark mr-4"> فقط عکس دار</span>
+                                    <FormControlLabel
+                                        control={
+                                            <Switch className="mr-5"
+                                                checked={this.state.checkedA}
+                                                onChange={(e)=>this.togglechane(e)}
+                                                name="checkedA"
+                                                color="primary"
+                                            />
+                                        }
+                                    />
+                                </div>
                             </Link>
                         </li>
-
+                    <li>
+                        <div>
+                            <span  className="text-dark mr-4"> فقط فوری</span>
+                            <FormControlLabel
+                                control={
+                                    <Switch className="css-mr"
+                                            checked={this.state.checkedB}
+                                            onChange={(e)=>this.togglechaneB(e)}
+                                            name="checkedB"
+                                            color="primary"
+                                    />
+                                }
+                            />
+                        </div>
+                    </li>
 
                     </ul>
 
                 </div>
-                <hr className="hr"/>
 
-                <div>
-                    <Link to=" "><img alt="3" src="/assert/3.png" className="logo"/></Link>
-                    <Link to=" "><img alt="2" src="/assert/2.png" className="logo"/></Link>
-                    <Link to=" "><img alt="1" src="/assert/1.png" className="logo"/></Link>
-                </div>
-                <hr className="hr"/>
                 <div>
                     <span className="bold">  سالیاس </span>
                     <span>را در شبکه های اجتماعی دنبال نمائید:</span>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Product from './../product'
 import InfiniteScroll from 'react-infinite-scroller';
+import Catergory from "../category";
 
 class  Tehran extends Component {
     constructor(props) {
@@ -31,16 +32,16 @@ class  Tehran extends Component {
 
     render() {
         return (
-            <div>
-               <br/><br/><br/>
+            <div >
+                < Catergory />
                 <InfiniteScroll
-                    className="row rtl"
+                    className="row rtl "
                     pageStart={0}
                     loadMore={this.handleLoadMore.bind(this)}
                     hasMore={this.state.hasMore}
                     loader={<div className="loader"> درحال بارگذاری...</div>}
                 >
-                    {this.state.articles.map((product , index) => <Product product={product} key={index}/>)}
+                 {this.state.articles.map((product , index) => <Product product={product} key={index}/>)}
                 </InfiniteScroll>
 
 

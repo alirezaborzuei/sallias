@@ -8,8 +8,8 @@ import {Navbar, Nav, Form} from "react-bootstrap";
 
 const Navbars = () => (
 
-    <div className="topnav ">
-        <Navbar className="mb-0" expand="lg">
+    <div className="topnav nav-tabs right-txt">
+        <Navbar className="mb-0" expand={"md"}>
             <Nav.Link href={"/s"}><img  alt="logo" src="/assert/logo.png" className="navbar-logo "/></Nav.Link>
             {/*<Navbar.Brand> <MyNav address="/" isExact={true} label=" سالیاس"/></Navbar.Brand>*/}
             <div className="row">
@@ -24,7 +24,7 @@ const Navbars = () => (
 
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse  id="basic-navbar-nav" >
-                <Nav className="mr-auto">
+                <Nav className="mr-auto aaaaa">
                     <MyNav address="/" isExact={true} label="آگهی من"/>
                     <MyNav address="/chat" isExact={true} label="چت"/>
                     <MyNav address="/about" isExact={true} label="درباره ما"/>

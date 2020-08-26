@@ -1,11 +1,14 @@
 .textStyle{
     position: absolute;
-    left: 60%;
-    width: 40%;
+    left: 70%;
+    width: 25%;
+    top:90px;
     font-size: large;
-    height: 100%;
     text-align: center;
-    background: whitesmoke;
+    background: white;
+    line-height:50px;
+    height:50px;
+
 }
 .hr{
     width: 70%;
@@ -34,14 +37,14 @@
 }
 .position-input{
     position: relative;
-    right: 45%;
-    top:30px;
+    right: 43%;
+    top:80px;
 }
 .icon-root{
     padding: 10px 40px;
     display: flex;
     alignItems: 'center';
-    width: 60%;
+    width: 55%;
 }
 .search-input{
     flex: 1;
@@ -57,6 +60,7 @@
 .border-city{
     background-color: whitesmoke;
     border-radius: 5px;
+    padding-right: 48%;
     padding:15px;
     justify-content: center;
     align-items: center;
@@ -70,6 +74,8 @@
 
 }
 .pos-h2{
-  text-align: right;
-    padding-right: 42%;
+    text-align: right;
+    margin-top: 70px;
+    margin-right: 43%;
+
 }

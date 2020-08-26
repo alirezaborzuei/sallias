@@ -5,14 +5,13 @@
 }
 .topnav {
     overflow: hidden;
-    background-color: whitesmoke;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
-
-
+    z-index: 12;
+    background-color:white ;
 }
+
 .topnav  a{
     float: right;
     display: block;
@@ -25,9 +24,9 @@
 
 .navbar-item {
     color: black !important;
-    background-color: whitesmoke;
-    margin: 10px 5px 0 5px;
+    /*margin: 10px 5px 0 5px;*/
     padding: 5px 5px;
+    margin-right: 10px;
     transition: 500ms;
 }
 .navbar-item:hover{
@@ -37,6 +36,7 @@
     background-color: lightblue;
     color: white;
     margin-bottom: 0 !important;
+
 }
 navbar-item:after{
     text-decoration: none;
@@ -47,10 +47,15 @@ navbar-item:after{
 .icon-search:hover{
     background-color: lightblue;
 }
-
 .hr-nav{
     width: 100%;
     border:solid 0.2px lightblue;
     height: 0px;
 
 }
+
+.show{
+    background-color: white;
+    z-index: 12;
+}
+

@@ -66,7 +66,7 @@ class Catergory extends React.Component {
 
     render() {
         return (
-            <div className="mr-4 text-nowrap menu-style text-right">
+            <div className="mr-4 text-nowrap menu-style text-right d-none d-lg-block">
                 <div className="">
                     <ul>
                         <li><span>دسته بندی ها</span></li>
@@ -103,9 +103,11 @@ class Catergory extends React.Component {
                             <Link to=" "> <GroupAddIcon className="iconsize " style={{fontSize: 30}}/>
                                 <tittle className="text-dark"> اجتماعی</tittle>
                             </Link></li>
+                        <li>
                         <Link to=" "> <BusinessCenterIcon className="iconsize " style={{fontSize: 30}}/>
                             <tittle className="text-dark"> برای کسب و کار</tittle>
                         </Link>
+                        </li>
                         <li>
                             <Link to=" "> <PersonAddIcon className="iconsize " style={{fontSize: 30}}/>
                                 <tittle className="text-dark"> استخدام و کاریابی</tittle>

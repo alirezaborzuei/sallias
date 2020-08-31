@@ -8,9 +8,7 @@ function filterLastName(city, value) {
     let search = value
     return name.indexOf(search) === 0
 }
-
 const OptionSelect = (props) => {
-
     return (
         <div className="inputsindex">
             <Multiselect

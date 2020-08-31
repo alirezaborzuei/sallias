@@ -3,7 +3,7 @@ import axios from 'axios';
 import Product from './../product'
 import InfiniteScroll from 'react-infinite-scroller';
 import Catergory from "../category";
-
+import "./../../styles/city.css"
 class  Tehran extends Component {
     constructor(props) {
         super(props);
@@ -31,11 +31,12 @@ class  Tehran extends Component {
     }
 
     render() {
+
         return (
             <div >
                 < Catergory />
                 <InfiniteScroll
-                    className="row rtl "
+                    className="rtl padding-right"
                     pageStart={0}
                     loadMore={this.handleLoadMore.bind(this)}
                     hasMore={this.state.hasMore}

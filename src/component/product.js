@@ -6,10 +6,10 @@ class Product extends React.Component{
         const { product } = this.props;
         return (
 
-            <div className="col-lg-4 col-md-6 col-sm-12 product-margin" style={{ marginBottom : 20 }}>
+            <div className="product-margin col-lg-4 col-sm-6 col-xs-12" style={{ marginBottom : 20 }}>
                 <br/><br/><br/>
 
-                <div className="card">
+                <div className="card ">
                     <img className="card-img-top" src={product.image} alt={product.title} />
                     <div className="card-body">
                         <h4 className="card-title">{product.title}</h4>

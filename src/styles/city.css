@@ -1,0 +1,8 @@
+.padding-right {
+    padding-right: 0%;
+}
+@media only screen and (min-width: 991.98px) {
+    .padding-right {
+        padding-right: 20%;
+    }
+}

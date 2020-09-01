@@ -1,5 +1,5 @@
 .menu-style{
-    position: fixed;
+    position: absolute;
     top:60px;
     width: 20%;
     min-height: 1px;

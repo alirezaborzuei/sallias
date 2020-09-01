@@ -1,0 +1,27 @@
+.my-dir{
+    direction:ltr
+}
+.input-adds{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.pos-t{
+    position: relative;
+    direction: ltr;
+}
+.colors{
+    background-color: lightblue;
+}
+
+.mar{
+    margin:0;
+}
+
+@media(min-width:1200px) {
+    .mar {
+        margin-left:56%;
+    }
+}
+

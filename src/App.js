@@ -9,22 +9,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NoMatch from "./component/NoMatch";
 import Product from './component/Pages/product';
 import Tehran from './component/CityFile/Tehran'
-import Catergory from "./component/category";
+import Catergorymin from './component/categorymin'
+import SerachAdds from './component/SsearchAdds';
 function App() {
   return (
     <BrowserRouter>
                 <Navbars/>
-                <div className=" ">
                 <Switch>
-                    <Route path="/ca" exact={true} component={Catergory}/>
+                    <Route path="/a" exact={true} component={Catergorymin}/>
                     <Route path="/" exact={true} component={Dashboard}/>
                     <Route path="/city/1" exact={true} component={Tehran}/>
                     <Route path="/about" exact={true} component={About}/>
                     <Route path="/contact" exact={true} component={Contact}/>
                     <Route path="/product/:id" component={Product}/>
                     <Route component={NoMatch}/>
-                </Switch>
-                </div>
+                </Switch>           
             </BrowserRouter>
 
   );

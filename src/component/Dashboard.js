@@ -13,7 +13,6 @@ import Paper from '@material-ui/core/Paper';
 
 const Dashboard = () => {
     const [filterText, setFilterText] = useState("");
-
     const filteredItems = cities.filter(item =>
         item.name.includes(filterText)
     );
@@ -22,7 +21,7 @@ const Dashboard = () => {
         <div className="welcome">
             <div className="textStyle">
 
-<p>
+            <p>
                 <span> سالیاس! پایگاه خرید و فروش بی‌واسطه‌</span>
                 <br/>
                 <span>   اگه دنبال چیزی هستی، شهرت رو انتخاب کن و تو دسته‌بندی‌ها به دنبالش بگرد.</span>

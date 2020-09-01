@@ -4,6 +4,8 @@ import Product from './../product'
 import InfiniteScroll from 'react-infinite-scroller';
 import Catergory from "../category";
 import "./../../styles/city.css"
+import SsearchAdds from '../SsearchAdds';
+import Catergorymin from '../categorymin';
 class  Tehran extends Component {
     constructor(props) {
         super(props);
@@ -35,6 +37,8 @@ class  Tehran extends Component {
         return (
             <div >
                 < Catergory />
+                <SsearchAdds />
+               <Catergorymin />
                 <InfiniteScroll
                     className="rtl padding-right"
                     pageStart={0}

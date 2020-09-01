@@ -1,19 +1,27 @@
 .menu-style{
-    position: absolute;
-    top:60px;
+    position: fixed;
+    top:10%;
     width: 20%;
-    min-height: 1px;
     padding-left: 10px;
-    margin-bottom: 13px;
-    z-index: 9;
-
+    overflow-x: auto;
+    height: 100%;
+    scrollbar-width:none;
+}
+@media screen and (max-width: 700px) {
+    .menu-style {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+.browse__sidebar {
+    min-height: 150px;
+    width: 280px;
 }
 ul{
     padding-right: 0;
 }
-ul li {list-style-type: none;
-  
-}
+ul li {list-style-type: none;}
 .iconsize{
     color: lightblue !important;
 }

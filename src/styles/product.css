@@ -1,0 +1,40 @@
+.tdn{
+    text-decoration: none;
+    text-align:right;
+}
+.tdn:hover{
+    text-decoration:none;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    direction: ltr;
+}
+
+.post-card-image{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+}
+.card-horizontal:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.post-card-body {
+    min-width: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+   
+    color:black;
+}
+.post-card-title {
+    
+    font-weight: 500;
+    
+    line-height: 28px;
+    height: 56px;
+    margin-bottom: auto;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}

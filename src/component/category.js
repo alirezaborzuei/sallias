@@ -66,7 +66,7 @@ class Catergory extends React.Component {
 
     render() {
         return (
-            <div className="mr-4 text-nowrap menu-style text-right d-none d-lg-block">
+            <div className="mr-4 text-nowrap menu-style text-right d-none d-lg-block ">
                 <div className="">
                     <ul>
                         <li><span>دسته بندی ها</span></li>

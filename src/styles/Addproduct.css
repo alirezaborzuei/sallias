@@ -1,0 +1,24 @@
+.submit-title{
+    font-size: 22px;
+color: #303030;
+padding: 0 15px 0 0;
+margin: 20px 0 0 !important;
+font-weight: 700;
+}
+.expand-catergory{
+background-color: #fff;
+border: 1px solid rgba(0,0,0,.08);
+margin-top: 15px;
+padding: 15px 0 25px;
+border-radius: 3px;
+}
+.expanded-back {
+    border-bottom: 2px solid #bdbdbd;
+    padding: 15px 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

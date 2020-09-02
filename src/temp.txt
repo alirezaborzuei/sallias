@@ -1,0 +1,16 @@
+ {tes.map((item) => {
+                    return (
+                        <div>
+                            <p key={item.id}> {item.name} </p>
+                            {item.aa.map(function (sd) {
+                                return <div>
+                                    <p key={sd.id}>{sd.name}</p>
+                                    {
+                                        sd.listB.map (function(as) {
+                                            return <div>
+                                                <p key={as.id}>{as.name}</p>
+                                            </div>
+                                        })
+                                    }
+                                    </div>
+                            })}

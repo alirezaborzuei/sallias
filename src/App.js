@@ -9,14 +9,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NoMatch from "./component/NoMatch";
 import Product from './component/Pages/product';
 import Tehran from './component/CityFile/Tehran'
-import Catergorymin from './component/categorymin'
+import Addproduct from './component/Addproduct'
 function App() {
   return (
     <BrowserRouter>
                 <Navbars/>
                 <Switch>
-                  
-                    <Route path="/a" exact={true} component={Catergorymin}/>
+                    
+                    <Route path="/a" exact={true} component={Addproduct}/>
                     <Route path="/" exact={true} component={Dashboard}/>
                     <Route path="/city/1" exact={true} component={Tehran}/>
                     <Route path="/about" exact={true} component={About}/>

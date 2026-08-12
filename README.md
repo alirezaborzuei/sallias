@@ -1,30 +1,49 @@
-# Sallias — Marketplace / Classifieds Frontend
+# Sallias — Marketplace / Classifieds Frontend 🛒
 
-A React-based marketplace application inspired by modern classified-ad platforms. The project demonstrates building a rich, data-driven frontend with search, filtering, forms, reusable UI components, and a responsive user experience.
+A React-based marketplace/classifieds frontend inspired by modern listing platforms. The project focuses on search, filtering, forms, reusable UI components, and data-driven frontend workflows.
 
-## What this project demonstrates
+> **Portfolio project:** this repository is a personal sample intended to demonstrate frontend engineering. It is not a copy of a company production system and should not contain proprietary code, credentials, or confidential data.
 
-- React application architecture
-- Product/listing-oriented UI
+## 🎯 What It Demonstrates
+
+- Product/listing-oriented UI architecture
 - Search and filtering workflows
+- Reusable React components
 - Form and data-entry interfaces
-- Reusable components
-- Responsive layouts
-- API-oriented frontend structure
-- Material UI / Bootstrap based component styling
-
-## Tech Stack
-
-- React 16
-- React Router
-- Axios
-- Material UI
-- React Bootstrap
-- Bootstrap
+- API-oriented frontend integration
+- Responsive web design
+- Client-side routing and navigation
 - Elastic Search UI integration
-- date-fns
+- Practical component-library usage
 
-## Getting Started
+## 🧰 Tech Stack
+
+| Area | Technology |
+|---|---|
+| Framework | React 16 |
+| Routing | React Router |
+| HTTP | Axios |
+| UI | Material UI, React Bootstrap, Bootstrap |
+| Search | Elastic Search UI |
+| Date handling | date-fns |
+
+## 🏗️ Application Structure
+
+The project follows a component-oriented React structure with separate areas for UI, application flows, public assets, and configuration.
+
+```text
+src/
+├── components/       # Reusable UI components
+├── pages/            # Application views / routes
+├── services/         # API-oriented integration
+└── ...
+
+public/               # Static assets
+```
+
+> The exact internal structure may evolve as the project is modernized.
+
+## 🚀 Running Locally
 
 ```bash
 npm install
@@ -33,19 +52,45 @@ npm start
 
 The development server runs on `http://localhost:3000`.
 
-## Portfolio Notes
+## 🧠 Engineering Focus
 
-This repository is a **personal sample project** intended to demonstrate frontend engineering and application development skills. It is separate from company production systems and should not be treated as a copy of any commercial platform.
+Sallias is useful as a portfolio project because it demonstrates frontend work beyond isolated components: users need to discover listings, search and filter data, enter information, navigate between views, and interact with reusable UI elements.
 
-## Roadmap
+The main areas demonstrated are:
 
-- Modernize the React/tooling stack
-- Improve component architecture
-- Add stronger TypeScript coverage
-- Improve accessibility and responsive behavior
-- Add automated tests
-- Document application architecture and key user flows
+- Component reuse
+- State and UI interaction
+- Search/filter UX
+- Form handling
+- API-oriented architecture
+- Responsive interfaces
+- Integration with third-party UI/search libraries
 
-## Author
+## 📈 Modernization Roadmap
 
-Alireza Borzouei
+- [ ] Upgrade the React/tooling stack
+- [ ] Introduce TypeScript incrementally
+- [ ] Improve component architecture
+- [ ] Add automated unit/component tests
+- [ ] Improve accessibility
+- [ ] Improve responsive behavior
+- [ ] Add a clear API/service layer
+- [ ] Document key application flows
+- [ ] Review and remove generated build artifacts from version control
+
+## 🔐 Portfolio & Security Note
+
+This repository should remain free of:
+
+- Company source code
+- Production credentials
+- API keys and secrets
+- Customer/user data
+- Internal business documents
+- Proprietary assets
+
+## 👨‍💻 Author
+
+**Alireza Borzouei**
+
+- GitHub: https://github.com/alirezaborzuei
